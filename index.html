@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Test Page</title>
+ <style>
+  body {
+   background-color: #f2f2f2;
+  }
+  #header {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+  }
+  #container {
+   width: 80%;
+   margin: 0 auto;
+  }
+ </style>
+</head>
+<body>
+ <div id="header">
+  <h1>Test Page</h1>
+ </div>
+ <div id="container">
+  <h2>Welcome to the test page!</h2>
+  <p>This page is built with HTML, CSS, and JavaScript.</p>
+ </div>
+ <script>
+  const date = new Date();
+  document.body.innerHTML += `
+   <h2>Current Date and Time: ${date.toLocaleString()}</h2>
+  `;
+ </script>
+</body>
+</html>
